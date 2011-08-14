@@ -51,3 +51,8 @@ set history=100
 set noerrorbells
 
 
+
+
+
+"自定义快捷键
+nmap vs :vsplit
