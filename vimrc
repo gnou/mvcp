@@ -41,3 +41,13 @@ filetype indent on
 "状态栏
 "set statusline=\ [File]\ %F%m%r%h\ %w\ \ [PWD]\ %r%{CurrectDir()}%h\ \ %=[Line]\ %l,%c\ %=\ %P
 
+"关闭备份
+set nobackup
+
+"设置历史记录条数
+set history=100
+
+"关闭出错时的警报声
+set noerrorbells
+
+
