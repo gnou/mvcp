@@ -56,3 +56,8 @@ set noerrorbells
 
 "自定义快捷键
 nmap vs :vsplit
+
+"PLUGINS
+"MiniBufExplorer
+"Ctrl+L=next buf  &&  Ctrl+H=last buf
+let g:miniBufExplMapCTabSwitchBufs = 1
