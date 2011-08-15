@@ -39,7 +39,9 @@ filetype plugin on
 filetype indent on
 
 "状态栏
-"set statusline=\ [File]\ %F%m%r%h\ %w\ \ [PWD]\ %r%{CurrectDir()}%h\ \ %=[Line]\ %l,%c\ %=\ %P
+set statusline=\ [File]\ %F\ %=Line\:\%l,Column\:%c\ %P
+"状态栏总是存在
+set laststatus=2
 
 "关闭备份
 set nobackup
@@ -50,14 +52,27 @@ set history=100
 "关闭出错时的警报声
 set noerrorbells
 
+"配置多语言环境
+if has("multi_byte")
+	set encoding=utf-8
+	set termencoding=utf-8
+	set formatoptions+=mM
+	set fencs=utf-8,gbk
+	if v:lang=~?'^\(zh\)\|\(ja\)\|\(ko\)'
+		set ambiwidth=double
+	endif
+endif
 
-
-
+"专用于Gvim的部分
+if has('gui_running')
+	"设置字体
+	"set guifont=
+endif
 
 "自定义快捷键
 nmap vs :vsplit
 
-"PLUGINS
+"插件相关配置
 "MiniBufExplorer
 "Ctrl+L=next buf  &&  Ctrl+H=last buf
 let g:miniBufExplMapCTabSwitchBufs = 1
