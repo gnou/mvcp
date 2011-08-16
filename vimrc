@@ -39,7 +39,7 @@ filetype plugin on
 filetype indent on
 
 "状态栏
-set statusline=\ [File]\ %F\ %=Line\:\%l,Column\:%c\ %P
+set statusline=\ [File]\ %F\ %r\ %=Line\:\%l,Column\:%c\ %P
 "状态栏总是存在
 set laststatus=2
 
