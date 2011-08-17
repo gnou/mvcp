@@ -1,1 +1,8 @@
 mvcp stand for "My Vim Configuration Project"
+
+ -------------------------------------------------------
+About DrawIt! plugin installation
+Step 1: vim DrawIt.vba.gz
+Step 2: In vim's command line mode, put in :so %
+Step 3: Quit vim
+ -------------------------------------------------------
