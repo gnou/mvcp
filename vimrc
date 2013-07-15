@@ -9,15 +9,22 @@ syntax enable
 "使用语法高亮配色方案替换默认方案
 syntax on
 "用于语法高亮的配色方案
-"colorscheme evening
+colorscheme solarized
+set background=dark
 
 "设置字体
-"set guifont=
+set gfn=Monaco:h14
 
 "设置tab键宽度
 set tabstop=4
 set shiftwidth=4
-set noexpandtab
+"以空格代替制表符
+set expandtab
+
+set softtabstop=4
+set smartindent
+"开始新行时使用上一行的缩进方式
+set autoindent
 
 "显示行号
 set number
@@ -28,7 +35,10 @@ set ignorecase
 "高亮显示搜索结果
 set hlsearch
 "开启实时搜索
-"set incsearch
+set incsearch
+
+"键入)}]时显示({[的位置
+set showmatch
 
 "文件类型检测
 "打开文件类型检测
