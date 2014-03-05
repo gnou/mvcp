@@ -1,5 +1,7 @@
 "Author: Gnou Cui
 "UpdateTime: Aug 13, 2011
+"
+execute pathogen#infect()
 
 "关闭兼容模式
 set nocompatible
@@ -10,7 +12,12 @@ syntax enable
 syntax on
 "用于语法高亮的配色方案
 colorscheme solarized
-set background=dark
+
+if has('gui_running')
+	set background=light
+else
+	set background=dark
+endif
 
 "设置字体
 set gfn=Monaco:h14
