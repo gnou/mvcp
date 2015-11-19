@@ -11,7 +11,7 @@ syntax enable
 "使用语法高亮配色方案替换默认方案
 syntax on
 "用于语法高亮的配色方案
-colorscheme solarized
+colorscheme darkblue
 
 if has('gui_running')
 	set background=light
